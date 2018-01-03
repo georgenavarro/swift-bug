@@ -20,8 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		do {
 			let someInstance = SomeClass<Int>()
 			try someInstance.someFunction(someParameter: 0)
-		} catch SomeClass.SomeError.someErrorCase {
+		} catch SomeClass<Int>.SomeError.someErrorCase {
 			print("caught some error case")
+		} catch {
+			print("caught an error")
 		}
 
 		return true
