@@ -28,3 +28,5 @@ do {
 ```
 
 If the catch statement is specialized from `SomeClass.SomeError.someErrorCase` to `SomeClass<Int>.SomeError.someErrorCase` then the compiler will succeed, however the indexing process that runs in the background will still struggle with this line of code and will continue to use CPU resources at an elevated level until the project is closed.
+
+Link to swift bug: https://bugs.swift.org/browse/SR-6692
