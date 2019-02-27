@@ -18,7 +18,7 @@ class SomeClass<SomeType> {
 
 The compiler will not be able to compile the following do-catch statement but will also not error out and continue to run indefinitely:
 
-```
+```swift
 do {
 	let someInstance = SomeClass<Int>()
 	try someInstance.someFunction(someParameter: 0)
